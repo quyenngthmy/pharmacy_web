@@ -1,0 +1,27 @@
+
+/* font-weight: Regular /400 */
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Product Sans Regular'), url("ProductSans-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Product Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Product Sans Regular Italic'), url("ProductSans-Italic.otf") format('opentype');
+}
+/* font-weight: Bold   /700 */
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Product Sans Bold'), url("ProductSans-Bold.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Product Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Product Sans Bold Italic'), url("ProductSans-Bold_Italic.otf") format('opentype');
+}

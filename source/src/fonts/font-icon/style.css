@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'TwebIcons-29';
+  src:  url('fonts/TwebIcons-29.eot?g14k0t');
+  src:  url('fonts/TwebIcons-29.eot?g14k0t#iefix') format('embedded-opentype'),
+    url('fonts/TwebIcons-29.ttf?g14k0t') format('truetype'),
+    url('fonts/TwebIcons-29.woff?g14k0t') format('woff'),
+    url('fonts/TwebIcons-29.svg?g14k0t#TwebIcons-29') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="twi-29-"], [class*=" twi-29-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'TwebIcons-29' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.twi-29-call-fill:before {
+  content: "\e900";
+}
+.twi-29-check-fill:before {
+  content: "\e901";
+}
+.twi-29-email-fill:before {
+  content: "\e902";
+}
+.twi-29-facebook-fill:before {
+  content: "\e903";
+}
+.twi-29-instagram-fill:before {
+  content: "\e904";
+}
+.twi-29-location-fill:before {
+  content: "\e905";
+}
+.twi-29-twitter-fill:before {
+  content: "\e906";
+}
+.twi-29-arrow-down-line:before {
+  content: "\e907";
+}
+.twi-29-arrow-left-line:before {
+  content: "\e908";
+}
+.twi-29-arrow-right-line:before {
+  content: "\e909";
+}
+.twi-29-arrow-up-line:before {
+  content: "\e90a";
+}
+.twi-29-menu-line:before {
+  content: "\e90b";
+}
+.twi-29-search-line:before {
+  content: "\e90c";
+}

@@ -1,27 +1,35 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack'); 
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin');
 module.exports = {
   mode: "development",
   stats: {
     children: true,
   },
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin({})],
+    usedExports: true,
+    minimize: true,
+    minimizer: [
+       new HtmlMinimizerPlugin(),
+       new CssMinimizerPlugin(),
+       new TerserWebpackPlugin({
+        extractComments: false,
+      }),
+    ],
   },
   entry: {
     index: {
       import:'./src/index.js',
-      filename: 'js/index.js'
+      filename: 'static/js/bundle.js' 
     },
   },
   output: {
-    publicPath: "/",
-    path: path.resolve(__dirname, "build"),
     clean: true,
+    path: path.resolve(__dirname, "build"),
   },
   module: {
     rules: [
@@ -101,9 +109,8 @@ module.exports = {
       inject: "body",
       chunks: ['index'],
     }),
-    new BaseHrefWebpackPlugin({ baseHref: '/' }),
     new MiniCssExtractPlugin({
-      filename: "css/[name].min.css",
+      filename: "static/css/[name].min.css",
     }),
     
   ],

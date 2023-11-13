@@ -45,7 +45,7 @@ npm test: Run tests.
 
 Folder Structure
 Explain the purpose of each important folder in your project.
-
+```
 ├── /build/                  # Compiled files (not included in the repository)
 ├── /src/                   # Source code
 │   ├── /assets/            # Static assets
@@ -57,3 +57,4 @@ Explain the purpose of each important folder in your project.
 ├── .eslintrc               # ESLint configuration
 ├── webpack.config.js       # Webpack configuration
 └── package.json            # NPM package configuration
+```

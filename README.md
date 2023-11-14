@@ -48,9 +48,7 @@ Explain the purpose of each important folder in your project.
 ```
 ├── /build/                  # Compiled files (not included in the repository)
 ├── /src/                   # Source code
-│   ├── /assets/            # Static assets
-│   ├── /components/        # React components
-│   ├── /styles/            # Stylesheets
+│   ├── /css/               # Stylesheets
 │   ├── index.html          # HTML template
 │   ├── index.js            # Entry point
 ├── .babelrc                # Babel configuration
